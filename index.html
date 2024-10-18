@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
+      :root {
+        --background: #f3f3f3;
+        --primary-color: #3c00e0;
+        --secondary-color: #0f6a39;
+      }
       body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 3rem 1fr;
-        background-color: white;
+        background-color: var(--background);
       }
       header {
         grid-column: 1/4;
-        background-color: blue;
+        background-color: var(--primary-color);
       }
       nav {
-        background-color: coral;
+        background-color: var(--secondary-color);
       }
       main {
-        background-color: aliceblue;
         grid-column: 2/4;
       }
     </style>
