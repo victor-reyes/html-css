@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3rem 1fr;
+        background-color: white;
+      }
+      header {
+        grid-column: 1/4;
+        background-color: blue;
+      }
+      nav {
+        background-color: coral;
+      }
+      main {
+        background-color: aliceblue;
+        grid-column: 2/4;
+      }
+    </style>
   </head>
   <body>
     <header>Some header</header>
